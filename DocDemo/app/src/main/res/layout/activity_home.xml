@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<com.eheartcare.docdemo.docdemo.ui.widget.NoScroolViewPager
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:layout_weight="10"
+    android:id="@+id/vp_home"
+    >
+
+
+</com.eheartcare.docdemo.docdemo.ui.widget.NoScroolViewPager>
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:orientation="horizontal"
+        android:id="@+id/rg_home"
+        >
+        <RadioButton
+            style="@style/Home_RadioButton"
+            android:id="@+id/rb_home_home"
+            android:drawableTop="@drawable/selector_rb_home_home_bg"
+            android:text="首页"
+            />
+        <RadioButton
+            style="@style/Home_RadioButton"
+            android:id="@+id/rb_home_record"
+            android:drawableTop="@drawable/selector_rb_home_record_bg"
+
+            android:text="记录"
+
+            />
+        <RadioButton
+            style="@style/Home_RadioButton"
+            android:id="@+id/rb_home_message"
+            android:drawableTop="@drawable/selector_rb_home_message_bg"
+
+            android:text="消息"
+
+            />
+
+        <RadioButton
+            android:id="@+id/rb_home_aboutme"
+            android:drawableTop="@drawable/selector_rb_home_aboutme_bg"
+            android:text="我"
+            style="@style/Home_RadioButton" />
+
+    </RadioGroup>
+</LinearLayout>

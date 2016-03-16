@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    tools:showIn="@layout/activity_add_info">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:id="@+id/ll_addinfo_name"
+
+        >
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:textSize="14.5sp"
+            android:gravity="right"
+            android:text="真实姓名"
+            android:id="@+id/tv_addinfo_name"
+
+            />
+
+        <EditText
+            android:layout_marginLeft="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_edittext_white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/ll_addinfo_name"
+        android:layout_alignRight="@id/ll_addinfo_name">
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:textSize="14.5sp"
+            android:gravity="right|center_horizontal"
+            android:layout_marginTop="5dp"
+            android:text="性别"
+
+            />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="男"
+                android:textSize="14.5sp"
+
+                />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="女"
+                android:textSize="14.5sp" />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+
+
+        >
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:textSize="14.5sp"
+            android:gravity="right|center"
+            android:text="出生日期"
+
+            />
+
+        <EditText
+            android:layout_marginLeft="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="32.5dp"
+            android:background="@drawable/selector_button"
+            android:hint="点击选择出生日期"
+            android:textSize="12.5sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_color_brown"
+            android:paddingLeft="5dp"
+            android:id="@+id/et_addinfo_selectbirthdate"
+
+            />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+
+
+        >
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:textSize="14.5sp"
+            android:gravity="right|center"
+            android:text="地址"
+
+            />
+        <EditText
+            android:layout_marginLeft="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="32.5dp"
+            android:background="@drawable/selector_button"
+            android:hint="请填写真实地址"
+            android:textSize="12.5sp"
+            android:id="@+id/et_addinfo_location"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_color_brown"
+            android:paddingLeft="5dp"
+
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginLeft="15dp"
+
+
+        >
+
+        <TextView
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:textSize="14.5sp"
+            android:gravity="right|center"
+            android:text="Email地址"
+
+            />
+        <EditText
+            android:layout_marginLeft="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="32.5dp"
+            android:background="@drawable/selector_button"
+            android:hint="用于找回密码，请认真填写"
+            android:textSize="12.5sp"
+            android:gravity="center_vertical"
+            android:textColor="@color/font_color_brown"
+            android:paddingLeft="5dp"
+
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
